@@ -1,0 +1,266 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.5;
+}
+
+/* Background Shapes to mimic the waves */
+.background-shape {
+    position: absolute;
+    background-color: #f7f9fb;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.shape-1 {
+    width: 150vw;
+    height: 100vh;
+    top: -20vh;
+    left: -25vw;
+    transform: rotate(-10deg);
+}
+
+.shape-2 {
+    width: 200vw;
+    height: 150vh;
+    top: 50vh;
+    left: -50vw;
+    transform: rotate(5deg);
+    background-color: #fcfcfc;
+}
+
+.shape-3 {
+    width: 180vw;
+    height: 120vh;
+    top: 150vh;
+    left: -40vw;
+    transform: rotate(-8deg);
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Common Section Styles */
+.split-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80vh;
+    padding: 60px 0;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-content {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.center-vertically {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.screens-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Typography Styles */
+h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.subtitle {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section-desc {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Hero Section Specifics */
+.logo-wrapper {
+    margin-bottom: 30px;
+}
+
+.main-logo {
+    max-width: 300px;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.store-btn img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.2s ease;
+}
+
+.store-btn:hover img {
+    transform: translateY(-3px);
+}
+
+.top-screens {
+    max-height: 700px;
+}
+
+/* Channels Section Specifics */
+.channels-section .text-content {
+    padding-left: 50px;
+}
+
+.sec-screens {
+    max-height: 700px;
+}
+
+/* Messages Section Specifics */
+.messages-section .text-content {
+    padding-right: 50px;
+}
+
+.thhh-screens {
+    max-height: 600px;
+}
+
+/* In Future Section Specifics */
+.future-section .text-content {
+    padding-left: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.vectors-container {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.vectors-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.for-screens {
+    max-height: 700px;
+}
+
+/* Footer Section */
+.site-footer {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background-color: transparent;
+}
+
+.download-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.footer-buttons {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.contact-link {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.footer-logo img {
+    height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.5rem; }
+    .subtitle { font-size: 1.2rem; }
+    .section-desc { font-size: 1.2rem; }
+    .split-section { flex-direction: column; text-align: center; padding: 40px 0; }
+    
+    .reverse-on-mobile {
+        flex-direction: column-reverse;
+    }
+    
+    .text-content {
+        padding: 20px 0 !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .channels-section .text-content,
+    .messages-section .text-content,
+    .future-section .text-content {
+        padding: 30px 20px !important;
+    }
+
+    .store-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .store-buttons { flex-direction: column; align-items: center; }
+    h1 { font-size: 1.5rem; letter-spacing: 2px; }
+    .main-logo { max-width: 200px; }
+    .store-btn img { height: 45px; }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="mobile-container">
+    <!-- Header -->
+    <header class="header">
+      <h1 style="font-family: 'Pacifico', cursive; font-size: 24px; font-weight: normal; font-style: italic;">Instagram</h1>
+      <div class="header-icons">
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">chat</span>
+      </div>
+    </header>
+
+    <div class="stories-container">
+    
+      <div class="story">
+        <div class="story-ring">
+          <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&q=80" alt="Your Story">
+        </div>
+        <span class="story-user">Your Story</span>
+      </div>
+      <div class="story">
+        <div class="story-ring">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Jane">
+        </div>
+        <span class="story-user">jane_doe</span>
+      </div>
+      <div class="story">
+        <div class="story-ring">
+          <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150&q=80" alt="Mike">
+        </div>
+        <span class="story-user">mike_smith</span>
+      </div>
+      <div class="story">
+        <div class="story-ring">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80" alt="Sarah">
+        </div>
+        <span class="story-user">sarah_123</span>
+      </div>
+      <div class="story">
+        <div class="story-ring">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Alex">
+        </div>
+        <span class="story-user">alex.dev</span>
+      </div>
+    </div>
+
+    
+    <main style="flex: 1; overflow-y: auto;">
+      <!-- Post 1 -->
+      <article class="post">
+        <div class="post-header">
+          <div class="post-user">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Jane">
+            <span class="post-user-name">jane_doe</span>
+          </div>
+          <span class="material-symbols-outlined post-more">more_horiz</span>
+        </div>
+        <div class="post-image">
+          <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+        </div>
+        <div class="post-actions">
+          <div class="post-actions-left">
+            <span class="material-symbols-outlined action-icon">favorite</span>
+            <span class="material-symbols-outlined action-icon">chat_bubble</span>
+            <span class="material-symbols-outlined action-icon">send</span>
+          </div>
+          <span class="material-symbols-outlined action-icon">bookmark</span>
+        </div>
+        <div class="post-likes">
+          1,024 likes
+        </div>
+        <div class="post-caption">
+          <span class="post-caption-user">jane_doe</span> Learning to code while enjoying some good coffee! ☕️💻
+        </div>
+        <a href="#" class="post-comments-link">View all 14 comments</a>
+        <div class="post-time">2 HOURS AGO</div>
+      </article>
+      
+  
+      <article class="post">
+        <div class="post-header">
+          <div class="post-user">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=150&q=80" alt="Mike">
+            <span class="post-user-name">mike_smith</span>
+          </div>
+          <span class="material-symbols-outlined post-more">more_horiz</span>
+        </div>
+        <div class="post-image">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Post Image">
+        </div>
+        <div class="post-actions">
+          <div class="post-actions-left">
+            <span class="material-symbols-outlined action-icon filled" style="color: red;">favorite</span>
+            <span class="material-symbols-outlined action-icon">chat_bubble</span>
+            <span class="material-symbols-outlined action-icon">send</span>
+          </div>
+          <span class="material-symbols-outlined action-icon">bookmark</span>
+        </div>
+        <div class="post-likes">
+          52 likes
+        </div>
+        <div class="post-caption">
+          <span class="post-caption-user">mike_smith</span> Late night bug squashing 🐛
+        </div>
+        <div class="post-time">5 HOURS AGO</div>
+      </article>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item"><span class="material-symbols-outlined filled">home</span></a>
+      <a href="search.html" class="nav-item"><span class="material-symbols-outlined">search</span></a>
+      <a href="#" class="nav-item"><span class="material-symbols-outlined">add_box</span></a>
+      <a href="#" class="nav-item"><span class="material-symbols-outlined">movie</span></a>
+      <a href="profile.html" class="nav-item"><span class="material-symbols-outlined">account_circle</span></a>
+    </nav>
+  </div>
+</body>
+</html>

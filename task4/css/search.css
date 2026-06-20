@@ -1,0 +1,72 @@
+/* Search Grid Styles */
+
+.search-header {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  padding: 8px 12px;
+  gap: 8px;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.search-bar input::placeholder {
+  color: var(--gray-text);
+}
+
+.explore-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(130px, auto);
+  gap: 2px;
+  flex: 1;
+}
+
+.explore-item {
+  position: relative;
+  background: #eee;
+}
+
+.explore-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Make some items span larger (like the standard explore grid) */
+.explore-item:nth-child(3n) {
+  /* every 3rd item just normal, but let's do a specific pattern */
+}
+
+/* Standard Instagram explore pattern: */
+.explore-large {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.explore-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: white;
+  font-size: 18px;
+  filter: drop-shadow(0 0 2px rgba(0,0,0,0.5));
+}
